@@ -1,0 +1,34 @@
+= ${artifactId}-ui
+
+Dieses Projekt wurde mit create-react-app erzeugt.
+* Anleitung: https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md
+
+== How to: Build
+* Node.js muss installiert sein.
+* .npmrc-Datei muss ins Benutzerverzeichnis kopiert werden
+
+[source,bash]
+npm run build
+
+== How to: Start
+
+=== Frontend im Entwicklungsmodus
+Änderungen an .js Dateien werden sofort beim speichern sichtbar.
+Benötigt ein lokal installiertes nodejs https://nodejs.org/
+
+im Ordner src/${artifactId}-ui folgenden Befehl
+[source,bash]
+npm start
+
+der Befehl öffnet automatisch einen Browser mit der Anwendung.
+
+== Hot to: Test
+* Jest: https://jestjs.io/docs/en/getting-started
+* Enzyme: http://airbnb.io/enzyme/
+
+Beispiel siehe App.test.js
+
+== Hot to: Codegen API
+* mvn install bff damit openapi generiert wird
+* starte skript in package json: openapi-ts
+* neue apis müssen in openapi-ts.config.ts ergänzt werden
